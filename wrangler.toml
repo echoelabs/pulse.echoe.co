@@ -1,4 +1,4 @@
-name = "pulse-echoe-co"
+name = "pulseco"
 compatibility_date = "2025-11-29"
 compatibility_flags = ["nodejs_compat"]
 
