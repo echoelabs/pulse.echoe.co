@@ -1,4 +1,5 @@
 name = "pulseco"
+pages_build_output_dir = ".next"
 compatibility_date = "2025-11-29"
 compatibility_flags = ["nodejs_compat"]
 
