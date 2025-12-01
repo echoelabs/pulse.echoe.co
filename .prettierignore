@@ -1,0 +1,7 @@
+node_modules/
+.next/
+out/
+dist/
+bun.lock
+package-lock.json
+*.md

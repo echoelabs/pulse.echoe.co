@@ -1,0 +1,13 @@
+#!/bin/sh
+# Enforce branch naming conventions
+branch=$(git rev-parse --abbrev-ref HEAD)
+if ! echo "$branch" | grep -qE "^(main|develop|feature\/|bugfix\/|hotfix\/|release\/)"; then
+  echo "Branch name must start with: feature/, bugfix/, hotfix/, release/, or be main/develop"
+  exit 1
+fi
+
+# Prevent direct pushes to main
+if [ "$branch" = "main" ]; then
+  echo "Direct pushes to main are not allowed. Please create a PR."
+  exit 1
+fi

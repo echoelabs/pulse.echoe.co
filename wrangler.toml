@@ -1,0 +1,6 @@
+name = "pulse-echoe-co"
+compatibility_date = "2025-11-29"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
