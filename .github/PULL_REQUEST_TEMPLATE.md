@@ -1,17 +1,39 @@
 ## Summary
-<!-- Brief description of changes -->
+
+<!-- Brief description of what this PR does -->
 
 ## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change
-- [ ] Documentation update
+
+<!-- Select the type that applies -->
+- [ ] `feat` - New feature
+- [ ] `fix` - Bug fix
+- [ ] `docs` - Documentation only
+- [ ] `style` - Code style (formatting, no logic change)
+- [ ] `refactor` - Code refactoring
+- [ ] `perf` - Performance improvement
+- [ ] `test` - Adding/updating tests
+- [ ] `ci` - CI/CD configuration
+- [ ] `chore` - Other changes
+
+## CI Validation
+
+The following are automatically validated by CI:
+
+| Check | Description |
+|-------|-------------|
+| **Branch Naming** | Must start with conventional prefix (`feat/`, `fix/`, `docs/`, `chore/`, etc.) |
+| **Commit Format** | Must follow [Conventional Commits](https://www.conventionalcommits.org/) |
+| **Linear History** | No merge commits allowed (rebase only) |
+| **Up to Date** | Branch must be rebased on latest `main` |
+| **Lint** | ESLint must pass |
+| **Format** | Prettier formatting must pass |
+| **TypeScript** | Type checking must pass |
+| **Build** | Production build must succeed |
 
 ## Testing
+
 <!-- How was this tested? -->
 
-## Checklist
-- [ ] Code follows project style guidelines
-- [ ] Self-reviewed the code
-- [ ] Added/updated tests if needed
-- [ ] Updated documentation if needed
+## Screenshots
+
+<!-- If applicable, add screenshots -->
