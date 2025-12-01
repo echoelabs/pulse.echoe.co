@@ -20,7 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'pulse',
-  description: 'ai powered omni channel',
+  description: 'ecommerce intelligence platform',
 };
 
 export default function RootLayout({
