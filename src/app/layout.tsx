@@ -1,21 +1,26 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import SmoothScroll from "@/components/SmoothScroll";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono, Space_Grotesk } from 'next/font/google';
+import SmoothScroll from '@/components/SmoothScroll';
+import './globals.css';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "echoe",
-  description: "ai powered omni channel",
+  title: 'echoe',
+  description: 'ai powered omni channel',
 };
 
 export default function RootLayout({
@@ -26,11 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

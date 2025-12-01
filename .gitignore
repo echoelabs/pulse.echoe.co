@@ -43,3 +43,13 @@ next-env.d.ts
 # Development tools
 .claude/
 .genkit/
+
+# Cloudflare
+.wrangler/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
