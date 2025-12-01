@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'echoe',
+  title: 'pulse',
   description: 'ai powered omni channel',
 };
 
