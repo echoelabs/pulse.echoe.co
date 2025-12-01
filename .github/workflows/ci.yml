@@ -78,10 +78,13 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install
       - run: bun run build
-      - name: Deploy to Cloudflare Pages
+      - name: Create .assetsignore
+        run: echo "_worker.js" > out/.assetsignore
+      - name: Upload preview version
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy out --project-name=pulseechoeco
+          packageManager: bun
+          command: versions upload --preview-alias preview-${{ github.event.pull_request.number }} --message "PR #${{ github.event.pull_request.number }}"
 

@@ -1,7 +1,13 @@
 name = "pulseechoeco"
-pages_build_output_dir = "out"
 compatibility_date = "2025-11-29"
 compatibility_flags = ["nodejs_compat"]
+
+workers_dev = false
+preview_urls = true
+
+[assets]
+binding = "ASSETS"
+directory = "./out"
 
 [vars]
 ENVIRONMENT = "production"
